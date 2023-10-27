@@ -1,0 +1,22 @@
+Package: myCARMA
+Type: Package
+Title: CARMA but compilling (Title Case)
+Version: 0.1.0
+Author: Who wrote it
+Maintainer: The package maintainer <ines.garciaortiz99@gmail.com>
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+Imports: 
+        methods,
+        stats, 
+        dplyr, 
+        glmnet, 
+        Matrix, 
+        MASS, 
+        Rcpp (>= 1.0.6)
+LinkingTo: Rcpp, RcppArmadillo, RcppGSL
+NeedsCompilation: yes
+RoxygenNote: 7.2.3
