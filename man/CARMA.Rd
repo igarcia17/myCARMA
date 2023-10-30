@@ -66,7 +66,7 @@ CARMA(
 
 \item{y.var}{The input variance of the summary statistics, the default value is 1 as the summary statistics are standardized.}
 
-\item{tau}{The prior precision parameter of the effect size. The default value is computed based on the scenario of n=10000 and 1% heritability.}
+\item{tau}{The prior precision parameter of the effect size. The default value is computed based on the scenario of n=10000 and 0.01 heritability.}
 
 \item{outlier.switch}{The indicator variable for outlier detection. We suggest that the detection should always be turned on if using external LD matrix.}
 
@@ -83,7 +83,7 @@ The return is a list, for each list:
 }
 \description{
 Performs a Bayesian fine-mapping model in order to identify putative causal variants at GWAS loci. The model requires the summary statistics
-for the SNPs at the testing loci, the corresponding LD matrices for fine-mapping, and an estimated trait variance. Functional annotations can be included as prior 
+for the SNPs at the testing loci, the corresponding LD matrices for fine-mapping, and an estimated trait variance. Functional annotations can be included as prior
 information on the causality of the testing SNPs. The model also provides a procedure of outlier detection, which aims to identify discrepancies
 between summary statistics and LD matrix extracted from a reference panel. The model can be executed chromosome-wise to increase power.
 }
@@ -91,7 +91,7 @@ between summary statistics and LD matrix extracted from a reference panel. The m
 The function performs a Bayesian fine-mapping method.
 }
 \examples{
-# Example 
+# Example
 set.seed(1)
 n = 400
 p = 500
